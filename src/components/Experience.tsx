@@ -7,7 +7,7 @@ const Experience: FC = () => {
 
     const [job, setJob] = useState<number>(1)
 
-    return <div className='box' data-aos="fade-left" id='exp'>
+    return <div className='box' data-aos="zoom-in" id='exp'>
 
         <section className='exp'>
 

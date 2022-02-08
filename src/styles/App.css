@@ -110,7 +110,7 @@ code:first-child{
     position: fixed;
     left: 0;
     flex-direction: column;
-    transform: translateX(-100%);
+    transform: translateX(-1000%);
     height: 100vh;
     width: 67%;
     top: 0;

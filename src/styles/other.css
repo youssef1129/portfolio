@@ -134,6 +134,7 @@ ul{
     .content-left,.content-right{
         top: 0;
         bottom: 0;
+        width: revert;
     }
     .box:nth-child(3){
         flex-flow: column-reverse;
