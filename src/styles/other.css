@@ -1,0 +1,141 @@
+.box{
+    display: flex;
+    align-items: center;
+}
+
+.box section *{
+    margin: 3px;
+}
+
+ul{
+    list-style: none;
+}
+
+.exp{
+    display: flex;
+    align-items: center;
+    flex: auto;
+    justify-content: center;
+}
+.exp>div:last-child{
+    flex: auto;
+}
+.exp li{
+    display: flex;
+    align-items: center;
+}
+
+#jobs button{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 150ms cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+
+.projects{
+    flex: auto;
+}
+
+.projects img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.projects>div{
+    margin: 20px;
+    position: relative;
+}
+
+.content-left{
+    position: absolute;
+    top: 30%;
+    background-color: #000000b3;
+    padding: 2rem;
+    width: 400px;
+    left: 0;
+    border-radius: 5px;
+    display: grid;
+    justify-items: start;
+}
+.content-right{
+    position: absolute;
+    top: 30%;
+    background-color: #000000b3;
+    padding: 2rem;
+    width: 400px;
+    right: 0;
+    border-radius: 5px;
+    display: grid;
+    justify-items: end;
+}
+.content-left svg,.content-right svg{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.content-left>*,.content-right>*{
+    margin: 5px;
+}
+.content-left a{
+    place-self: flex-end;
+}
+.content-right a{
+    place-self: flex-start;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+}
+.contact>*{
+    margin: 15px;
+}
+
+.contact>a{
+    border: solid;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 100ms linear;
+}
+.contact>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.contact svg{
+    font-size: 1rem;
+}
+.contact div>*{
+    margin: 3px;
+}
+.contact>a:hover{
+    background-color: #e4ffb01f;
+}
+
+.contact>div:last-child{
+    width: auto;
+    color: #ffebee;
+}
+@media screen and (max-width: 780px){
+    .box{
+        flex-direction: column;
+    }
+    .content-left,.content-right{
+        top: 0;
+        bottom: 0;
+    }
+    .box:nth-child(3){
+        flex-flow: column-reverse;
+    }
+}

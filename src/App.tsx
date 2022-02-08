@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC, useEffect } from 'react';
+import './styles/App.css';
+import './styles/other.css';
+import Head from './components/Head';
+import 'aos/dist/aos.css';
+import About from './components/About';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+const Aos = require('aos');
 
-function App() {
+const App: FC = () => {
+
+  useEffect(() => {
+    Aos.init()
+  }, [])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <Head />
+      <About />
+      <div className='box2'>
+        <h1>experience</h1>
+        <span></span>
+      </div>
+      <Experience />
+      <div className='box2'>
+        <h1>projects</h1>
+        <span></span>
+      </div>
+      <Projects />
+      <Contact />
     </div>
   );
 }
