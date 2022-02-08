@@ -26,8 +26,8 @@ const App: FC = () => {
       </div>
       <Experience />
       <div className='box2'>
-        <h1>projects</h1>
         <span></span>
+        <h1>projects</h1>
       </div>
       <Projects />
       <Contact />

@@ -30,9 +30,9 @@ const Head: FC = () => {
 
             return () => clearTimeout(timer)
         }
-
-        document.onresize = ()=>{
-            window.innerWidth>780&&setStyle((old) => old = { transform: 'translateX(-1000%)' })
+        
+        window.onresize = ()=>{
+            window.innerWidth>780&&setStyle((old) => old = { transform: 'translateX(0)' })
         }
     return <nav className='header'  style={display}>
 
