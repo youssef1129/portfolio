@@ -29,44 +29,20 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('sw-cached-site.js', function () {
-        navigator.serviceWorker.register('serviceWorker.js', {
-          scope: '/',
-        });
-      });
-    }
-    window.process = { env: { NODE_ENV: 'production' } };
-
-    const cacheName = 'v1';
-    self.addEventListener('activate', (e) => {
-      e.waitUntil(
-        caches.keys().then(cacheNames => {
-          return Promise.all(
-            cacheNames.map(cache => {
-              if (cache !== cacheName) {
-                return caches.delete(cache);
-              }
-            })
-          )
-        })
-      )
-    });
-    self.addEventListener('fetch', e => {
-      e.respondWith(
-        fetch(e.request)
-          .then(res => {
-            const resClone = res.clone();
-            caches
-              .open(cacheName)
-              .then(cache => {
-                cache.put(e.request, resClone);
-              });
-            return res;
-          }).catch(err => caches.match(e.request).then(res => res))
-      );
-    });
-  </script>
+      if ('serviceWorker' in navigator) {
+           window.addEventListener('load', function() {
+             navigator.serviceWorker.register('serviceWorker.js').then(function(registration) {
+               console.log('Worker registration successful', registration.scope);
+             }, function(err) {
+               console.log('Worker registration failed', err);
+             }).catch(function(err) {
+               console.log(err);
+             });
+           });
+         } else {
+           console.log('Service Worker is not supported by browser.');
+         }
+     </script>
 </body>
 
 </html>
