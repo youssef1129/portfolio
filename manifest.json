@@ -23,6 +23,5 @@
   "background_color": "#dcedc8",
   "display": "fullscreen",
   "scope": "/",
-  "start_url": "/",
-  "prefer_related_applications": true
+  "start_url": "image/png"
 }
