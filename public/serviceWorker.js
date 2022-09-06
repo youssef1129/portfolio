@@ -1,5 +1,5 @@
 /* eslint-disable no-restricted-globals */
-let CACHE_NAME = 'portfolio';
+let CACHE_NAME = 'Coach';
 let urlsToCache = [
   '/',
   '/completed'
