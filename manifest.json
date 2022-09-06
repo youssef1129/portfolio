@@ -3,7 +3,8 @@
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "purpose": "any maskable"
     },
     {
       "src": "logo192.png",
@@ -22,6 +23,7 @@
   "theme_color": "#010c15",
   "background_color": "#dcedc8",
   "display": "fullscreen",
+  "orientation": "portrait",
   "scope": "/",
-  "start_url": "image/png"
+  "start_url": "/"
 }
