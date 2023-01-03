@@ -6,6 +6,7 @@ import scr3 from '../assets/scr3.png'
 import scr4 from '../assets/scr4.png'
 import scr5 from '../assets/scr5.png'
 import scr6 from '../assets/scr6.png'
+import scr7 from '../assets/rsc.png'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
 interface prps {
@@ -19,6 +20,14 @@ interface prps {
 
 const Projects = () => {
   const p = [
+    {
+      link: 'https://www.npmjs.com/package/schedule-react-component',
+      content: 'A react component for easy scheduling ',
+      scr: scr7,
+      stack: ['react', 'typescript', 'storybook','npm'],
+      style: 'content-left',
+      title: 'Schedule-react-component',
+    },
     {
       link: 'https://mylinkedinproject.web.app/',
       content: 'LinkedIn clone',
