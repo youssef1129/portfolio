@@ -11,8 +11,8 @@ const About = () => {
           <code>hello my name is</code>
           <h1>youssef maazouz.</h1>
           <h3>welcome to my portfolio.</h3>
-          <p>i'm a software developper currently studying
-             at university Choaib Doukkali , i'm specialized in building web/mobile
+          <p>i'm a software developper currently working
+             at Labelvie group , i'm specialized in building web/mobile
              applications with multiple stacks and tools.<br/><br/>
              Here are a few technologies I’ve been working with recently:<br/><br/>
              <FaReact/> <SiTypescript/> <IoLogoJavascript/> <FaNodeJs/> <SiFirebase/>
