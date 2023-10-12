@@ -132,3 +132,8 @@ code:first-child{
    box-shadow: none; 
   }
 }
+
+#lastUpdated{
+  font-size: 10px;
+    padding: 5px;
+}
