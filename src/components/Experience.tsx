@@ -50,8 +50,8 @@ const Experience: FC = () => {
         <section className='exp'>
             <div id='jobs'>
                 {
-                    jobs.map((j) => {
-                        return <button
+                    jobs.map((j,i) => {
+                        return <button key={i}
                             style={{ backgroundColor: currentJob.title === j.title ? '#e4ffb01f' : '' }}
                             onClick={() => setCurrentJob(jobs[jobs.findIndex((t) => t.title === j.title)])}>{j.title === currentJob.title && <IoMdArrowDropright />} {j.company}</button>
                     })
@@ -63,8 +63,8 @@ const Experience: FC = () => {
                 <h3>{currentJob.title}</h3>
                 <ul>
                     {
-                        currentJob.stack.map((s) => {
-                            return <li><BiRadioCircleMarked /> {s}</li>
+                        currentJob.stack.map((s,i) => {
+                            return <li key={i}><BiRadioCircleMarked /> {s}</li>
                         })
                     }
                 </ul>

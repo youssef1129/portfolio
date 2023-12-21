@@ -18,7 +18,7 @@ const App: FC = () => {
 
   return (
     <div className="main">
-      <label id='lastUpdated'>Last updated : 12-10-2023</label>
+      <label id='lastUpdated'>Last updated : 12-21-2023</label>
       <Head />
       <About />
       <div className='box2'>
