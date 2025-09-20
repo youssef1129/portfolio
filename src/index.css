@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*::-webkit-scrollbar {
+  cursor: grab;
+  width: 11px;
+  height: 5px;
+  margin: 10px;
+  padding: 4px;
+  direction: rtl;
+}
+ *::-webkit-scrollbar:hover {
+   width: 14px;
+   direction: rtl;
+ }
+*::-webkit-scrollbar-track {
+  cursor: grab;
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 4px;
+  direction: rtl;
+}
+*::-webkit-scrollbar-thumb {
+  cursor: grab;
+  background-color: #087974;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 4px;
+  direction: rtl;
+}
