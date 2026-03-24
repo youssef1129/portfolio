@@ -18,8 +18,8 @@ const SkillsSection: React.FC = () => {
       skills: [
         { name: 'Node.js', level: 86 },
         { name: 'Nest.js/Express.js', level: 90 },
-        { name: 'REST APIs', level: 95 },
-        { name: 'GraphQL', level: 82 },
+        { name: '.NET Core', level: 87 },
+        { name: 'Rest/GraphQL', level: 88 },
       ]
     },
     {

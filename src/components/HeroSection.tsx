@@ -13,7 +13,7 @@ const HeroSection = ({ setCurrentSection }: HeroSectionProps) => {
     '  name: "Youssef Maazouz",',
     '  role: "Full-Stack Developer",',
     '  passion: "Creating Digital Solutions",',
-    '  stack: ["React", "Node.js", "TypeScript"],',
+    '  stack: ["React", "TypeScript", ".Net"],',
     '  available: true',
     '};'
   ];
@@ -79,12 +79,12 @@ const HeroSection = ({ setCurrentSection }: HeroSectionProps) => {
           <button onClick={() => setCurrentSection(4)} className="group bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/25 hover:scale-105">
             <span className="flex items-center space-x-2">
               <Terminal size={20} />
-                <span className="relative">
+              <span className="relative">
                 <span className="animate-pulse text-cyan-200">{'<'}</span>
                 <span className="text-yellow-300 font-mono">Hire_Me</span>
                 <span className="animate-bounce text-pink-400"> required</span>
                 <span className="animate-pulse text-cyan-200">{'/>'}</span>
-                </span>
+              </span>
             </span>
           </button>
         </div>
