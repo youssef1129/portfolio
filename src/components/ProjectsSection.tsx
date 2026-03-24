@@ -34,7 +34,7 @@ const ProjectsSection: React.FC = () => {
         "Secure admin & user-facing portals",
       ],
       codeLink: "",
-      liveLink: "",
+      liveLink: "https://econs.maec.gov.ma/login",
     },
     {
       id: 3,
