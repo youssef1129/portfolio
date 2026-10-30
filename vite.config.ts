@@ -11,8 +11,13 @@ export default defineConfig({
       devOptions: {
         enabled: true,
       },
-      registerType: "prompt",
+      // Activate new builds automatically so users do not stay on stale cached assets.
+      registerType: "autoUpdate",
+      // Keep the resume available alongside the app shell in the production cache.
       includeAssets: ["favicon.ico"],
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,pdf,webmanifest}"],
+      },
       manifest: {
         name: "Portfolio",
         short_name: "Portfolio",
@@ -38,8 +43,8 @@ export default defineConfig({
         theme_color: "#ffffff",
         background_color: "#dcedc8",
         display: "standalone",
-        scope: "/",
-        start_url: "/",
+        scope: "/portfolio/",
+        start_url: "/portfolio/",
         orientation: "landscape",
       },
     }),
