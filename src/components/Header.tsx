@@ -1,5 +1,6 @@
 import React from 'react';
-import { Terminal, Code, User, Briefcase, Mail } from 'lucide-react';
+import { Terminal, Code, User, Briefcase, Mail, FileText } from 'lucide-react';
+import resumeUrl from '../../assets/maazouz_youssef_cv.pdf';
 
 interface HeaderProps {
   currentSection: number;
@@ -41,6 +42,15 @@ const Header: React.FC<HeaderProps> = ({ currentSection, setCurrentSection, sect
                 </button>
               );
             })}
+            <a
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 px-4 py-2 rounded-lg text-slate-400 hover:text-green-400 hover:bg-slate-700/50 transition-all duration-300"
+            >
+              <FileText size={18} />
+              <span>Resume</span>
+            </a>
           </div>
 
           {/* Mobile menu */}
@@ -79,6 +89,18 @@ const Header: React.FC<HeaderProps> = ({ currentSection, setCurrentSection, sect
                       </li>
                     );
                   })}
+                  <li>
+                    <a
+                      href={resumeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setMenuOpen(false)}
+                      className="w-full flex items-center space-x-2 px-4 py-3 text-left rounded-lg text-slate-400 hover:text-green-400 hover:bg-slate-700/50 transition-all duration-200"
+                    >
+                      <FileText size={18} />
+                      <span>Resume</span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             )}
